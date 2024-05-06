@@ -6,15 +6,12 @@ CONDA_ACTIVATE = source $$(conda info --base)/etc/profile.d/conda.sh ; conda act
 PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 PROJECT_NAME=$(shell basename $(PROJECT_DIR))
 
-# create mamba environment
-ec:
+create-environment: # create mamba environment
 	mamba env create --force --name $(PROJECT_NAME) -f env.yml
 
-# update mamba environment
-eu:
+update-environment: # update mamba environment
 	$(CONDA_ACTIVATE) $(PROJECT_NAME)
 	mamba env update -f env.yml --prune
 
-# remove mamba environment
-er: 
+remove-environment: # remove mamba environment
 	conda remove --name $(PROJECT_NAME) --all -y
