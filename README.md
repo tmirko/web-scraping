@@ -1,3 +1,5 @@
+<a name="readme-top"></a>
+
 <br />
 <div align="center">
 <h1 align="center">Web scraping</h3>
@@ -54,7 +56,7 @@ Scrape restaurant data from Tripadvisor.com for a given city.
 ### Prerequisites
 
 * Have [Miniforge3](https://github.com/conda-forge/miniforge?tab=readme-ov-file#download) installed
-* Be able to run Makefile
+* Be able to run make commands
 
 ### Installation
 
@@ -83,6 +85,8 @@ Scrape restaurant data from Tripadvisor.com for a given city.
 [pandas-url]: https://pypi.org/project/pandas
 [python]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
 [python-url]: https://www.python.org/
+
+
 
 <!-- Reference specific versions example
 [pandas]: https://img.shields.io/pypi/v/pandas%2F2.2.2?style=for-the-badge&label=pandas
