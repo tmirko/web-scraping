@@ -65,6 +65,11 @@ Scrape restaurant data from Tripadvisor.com for a given city.
    ```sh
    make create-environment
    ```
+2. Activate environment 
+     ```sh
+   conda activate web-scraping
+   ```
+3. Select the environment as Jupyter Notebook kernel
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
